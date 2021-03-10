@@ -100,3 +100,11 @@ repositories:
 #    type: git
 #    url: https://github.com/tier4/tunable_static_tf_broadcaster.git
 #    version: ros2
+  vendor/rslidar_msg:
+    type: git
+    url: https://github.com/autocore-ai/rslidar_msg.git
+    version: master
+  vendor/rslidar_sdk:
+    type: git
+    url: https://github.com/autocore-ai/rslidar_sdk.git
+    version: ros2-foxy-develop
