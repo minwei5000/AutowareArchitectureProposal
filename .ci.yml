@@ -1,0 +1,24 @@
+name: main
+
+
+stages:
+  - build
+  - release
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ros:foxy
+
+    steps:
+      -cd AutowareArchitectureProposal
+      -git checkout main
+      -./setup_ubuntu20.04.sh
+      -source ~/.bashrc
+      -colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
