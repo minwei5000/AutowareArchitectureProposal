@@ -29,12 +29,30 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Setup ROS 2
-        uses: ros-tooling/setup-ros@0.0.15
+        uses:  ros-tooling/setup-ros@0.0.25
         with:
-             required-ros-distributions: foxy
+           required-ros-distributions: melodic dashing
+           run: "source /opt/ros/dashing/setup.bash && ros2 run --help && source /opt/ros/melodic/setup.bash && rosnode --help"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      #uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       # Runs a single command using the runners shell
