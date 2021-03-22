@@ -1,3 +1,4 @@
+
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -26,25 +27,8 @@ jobs:
       - name: Setup ROS 2
         uses: ros-tooling/setup-ros@0.0.15
         with:
-            required-ros-distributions: eloquent
+             required-ros-distributions: foxy
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a shell
- 
-        run: |
-          echo $PATH
-          ls
-          git checkout main
-          sudo apt update && sudo apt install -y 
-          sudo apt-get install -y gnupg2 lsb-release gcc g++ dpkg python-rosdep
-          build-essential 
-          cmake 
-          git 
-          sudo apt-get update && sudo apt-get install -y curl python3-colcon-coveragepy-result python3-colcon-lcov-result lcov
-          ./setup_ubuntu20.04.sh
-          source ~/.bashrc
-          colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
-         
-          
