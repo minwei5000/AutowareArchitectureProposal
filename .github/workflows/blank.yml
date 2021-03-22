@@ -29,7 +29,7 @@ jobs:
       - name: Run a shell
  
         run: |
-          echo $PATH,
+          echo $PATH
           ls
           git checkout main
           ./setup_ubuntu20.04.sh
