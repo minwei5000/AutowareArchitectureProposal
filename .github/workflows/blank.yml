@@ -31,7 +31,6 @@ jobs:
         run: |
           echo $PATH,
           ls
-          cd AutowareArchitectureProposal
           git checkout main
           ./setup_ubuntu20.04.sh
           source ~/.bashrc
