@@ -36,10 +36,7 @@ jobs:
             build-essential \
             cmake \
             git \
-            python3-pip \
-            python-rosdep \
-            python3-vcstool \
-            wget
+            sudo apt-get update && sudo apt-get install -y curl python3-colcon-coveragepy-result python3-colcon-lcov-result lcov
           ./setup_ubuntu20.04.sh
           source ~/.bashrc
          
