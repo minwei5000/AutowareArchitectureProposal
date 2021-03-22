@@ -32,11 +32,12 @@ jobs:
           echo $PATH
           ls
           git checkout main
-          sudo apt update && sudo apt install -y \
-            build-essential \
-            cmake \
-            git \
-            sudo apt-get update && sudo apt-get install -y curl python3-colcon-coveragepy-result python3-colcon-lcov-result lcov
+          sudo apt update && sudo apt install -y 
+          sudo apt-get install -y gnupg2 lsb-release gcc g++ dpkg python-rosdep
+          build-essential 
+          cmake 
+          git 
+          sudo apt-get update && sudo apt-get install -y curl python3-colcon-coveragepy-result python3-colcon-lcov-result lcov
           ./setup_ubuntu20.04.sh
           source ~/.bashrc
           colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
