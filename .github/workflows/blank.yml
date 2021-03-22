@@ -27,18 +27,16 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo $PATH
+        run: 
+        echo $PATH
+        cd AutowareArchitectureProposal
+        
+        
 
         
         
         
-        
-        
-        
-        
-        
-        
-        
+    
         
 
       # Runs a set of commands using the runners shell
