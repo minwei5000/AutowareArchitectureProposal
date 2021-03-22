@@ -39,5 +39,6 @@ jobs:
             sudo apt-get update && sudo apt-get install -y curl python3-colcon-coveragepy-result python3-colcon-lcov-result lcov
           ./setup_ubuntu20.04.sh
           source ~/.bashrc
+          colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
          
           
