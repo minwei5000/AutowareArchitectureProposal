@@ -29,7 +29,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Prerequest
-        run: python3.8 -m pip install --upgrade pip
+        run: python3 -m pip install --upgrade pip
       - name: Setup ROS 2
         uses:  ros-tooling/setup-ros@0.0.25
         with:
