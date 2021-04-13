@@ -42,6 +42,7 @@ jobs:
       
       - name : setup
         run: ./setup_ubuntu20.04.sh
+
         
       - name: Build up 
         run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release 
