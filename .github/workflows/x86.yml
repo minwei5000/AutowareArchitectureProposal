@@ -32,7 +32,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Prerequest
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.2.2
   
       - name: Setup ROS 2
         uses:  ros-tooling/setup-ros@0.1.2
@@ -40,7 +40,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       
-      - name : setup
+      - shell: bash
         run: ./setup_ubuntu20.04.sh
 
         
