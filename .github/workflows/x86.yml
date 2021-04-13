@@ -34,7 +34,7 @@ jobs:
         uses:  ros-tooling/setup-ros@0.1.2
         
       - name: Build up 
-        run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
+        run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release 
         
 
 
