@@ -37,6 +37,9 @@ jobs:
         
       - name: checkout
         uses: actions/checkout@v2
+      
+      - name : setup
+        run: ./setup_ubuntu20.04.sh
         
       - name: Build up 
         run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release 
