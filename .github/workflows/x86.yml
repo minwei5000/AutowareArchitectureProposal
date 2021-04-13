@@ -39,7 +39,8 @@ jobs:
         uses: actions/checkout@v2
       
       - shell: bash
-        run: bash setup_ubuntu20.04.sh
+        run: ls
+             
 
         
       - name: Build up 
