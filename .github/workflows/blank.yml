@@ -34,8 +34,8 @@ jobs:
       - name: Setup ROS 2
         uses:  ros-tooling/setup-ros@0.1.2
         
-      - name: Setup ROS 2
-        run:  bash ./setup_ubuntu20.04.sh
+      - name: Setup
+        run:  bash  ${{ github.workspace }}/setup_ubuntu20.04.sh
         
       - name: Build up 
         run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
