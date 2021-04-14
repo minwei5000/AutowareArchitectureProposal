@@ -28,6 +28,7 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
       - name: Prerequest
         uses: actions/setup-python@v2
   
@@ -35,7 +36,7 @@ jobs:
         uses:  ros-tooling/setup-ros@0.1.2
         
       - name: Setup
-        run:  bash  ${ github.workspace }/setup_ubuntu20.04.sh
+        run:  bash  $GITHUB_WORKSPACE/setup_ubuntu20.04.sh
         
       - name: Build up 
         run: colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
