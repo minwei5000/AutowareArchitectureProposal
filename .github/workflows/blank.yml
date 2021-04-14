@@ -38,6 +38,7 @@ jobs:
       - name: Setup
         run:  |
             echo $PWD
+            ls -a
             chmod +x $GITHUB_WORKSPACE/setup_ubuntu20.04.sh
             bash  $GITHUB_WORKSPACE/setup_ubuntu20.04.sh
             
