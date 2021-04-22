@@ -49,5 +49,5 @@ jobs:
                                     docker buildx build \
                                     --output "type=image,push=true" \
                                     --platform linux/amd64,linux/arm64 \
-                                    --tag ${{ env.IMG_NAME }}:${{ github.job }} \
+                                    # --tag ${{ env.IMG_NAME }}:${{ github.job }} \
                                     --file ./Dockerfile .
