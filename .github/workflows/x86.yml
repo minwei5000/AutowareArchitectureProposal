@@ -33,10 +33,7 @@ jobs:
         
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          repository: ${{ env.REPO }}
-          ref: ${{ github.job }}
-       
+
       - name:  Set up Docker Buildx
            
         uses: docker/setup-buildx-action@v1
