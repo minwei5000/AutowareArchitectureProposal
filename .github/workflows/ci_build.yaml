@@ -47,5 +47,5 @@ jobs:
                                     EOF
                             - name: Build and push
                               run: |
-                                    docker buildx build --output "type=image,push=true" --tag ros2 --platform linux/amd64,linux/arm64 --file ./Dockerfile .
+                                    docker buildx build  --tag ros2 --platform linux/amd64,linux/arm64 --file ./Dockerfile .
 
