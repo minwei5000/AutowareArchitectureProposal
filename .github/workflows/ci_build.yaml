@@ -46,8 +46,5 @@ jobs:
                                     EOF
                             - name: Build and push
                               run: |
-                                    docker buildx build \
-                                    --output "type=image,push=true" \
-                                    --platform linux/amd64,linux/arm64 \
+                                    docker buildx build .
 
-                                    --file ./Dockerfile .
