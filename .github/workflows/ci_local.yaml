@@ -22,8 +22,8 @@ jobs:
                                 repository: ${{ env.REPO }}
                                 ref: ${{ github.job }}
 
-                            - name: Setup ROS
-                              uses: ros-tooling/setup-ros@v0.1
+                            # - name: Setup ROS
+                            #   uses: ros-tooling/setup-ros@v0.1
 
                             - name: Get Source Code
                               run: mkdir src && vcs import src < autoware.proj.repos
