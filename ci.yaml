@@ -23,3 +23,7 @@ jobs:
       -./setup_ubuntu20.04.sh
       -source ~/.bashrc
       -colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --catkin-skip-building-tests
+
+
+
+#####
